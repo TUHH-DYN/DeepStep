@@ -1,5 +1,7 @@
 # DeepStep: PDE Time Stepping through Deep Learning
 
+![Comparison of prediction and ground truth after 100 prediction-steps](images/wave_after_100_steps.png)
+
 ## Software Requirements
 
 Install Anaconda and prepare two conda environments (see below). You might be able to use one environment for all packages, but in our experience the handling of the FEniCS and Tensorflow packages is easier if they are used in seperate environments.
