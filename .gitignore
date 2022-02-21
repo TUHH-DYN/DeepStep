@@ -1,0 +1,15 @@
+# directories
+data/
+logs/
+.ipynb_checkpoints/
+.vscode/
+__pycache__/
+
+data
+
+nohup.txt
+nohup_*.txt
+*.npy
+*.json
+*.hdf5
+*.h5
