@@ -31,7 +31,7 @@ It is advisable to run the script in the background as the data generation might
 
     nohup ./generate_waveeqn_data.sh > nohup_generate_waveeqn_data.txt&
 
-The generated datasets can be found in the data/datasets_train_waveequation and data/datasets_test_waveequation directories (and respectively the _heatequation counterparts). The following naming convention is used:
+The generated datasets can be found in the `data/datasets_train_waveequation` and `data/datasets_test_waveequation` directories (and respectively the _heatequation counterparts). The following naming convention is used:
 
   - for validation/test datasets - [entity_name]\_dataset_validation\_[identifier].npy
   - for training datasets - [entity_name]\_dataset\_[identifier].npy
@@ -47,7 +47,7 @@ The generated datasets can be found in the data/datasets_train_waveequation and 
     - 'surface' - field evolution in mesh coordinates
     - for 'bcs' and 'domain' also a '_surf' variant of the respective entity is generated. Contrary to the original entities, the grid coordinates right at the domain surface are not ascribed to the domain. 
 
-You can visualize the generated datasets using the provided jupyter notebook 'notebook_visualize_train_and_test_data.ipynb'. Exchange 'waveeqn' by 'heateqn' in the commands above to generate the training and validation data for the heatequation case.
+You can visualize the generated datasets using the provided jupyter notebook `notebook_visualize_train_and_test_data.ipynb`. Exchange `waveeqn` by `heateqn` in the commands above to generate the training and validation data for the heatequation case.
 
 ## Train the networks
 
@@ -60,7 +60,7 @@ or (to run the script in the background):
     nohup ./train_waveeqn.sh > nohup_train_waveeqn.txt&
     nohup ./train_heateqn.sh > nohup_train_heateqn.txt&
 
-Again, exchange 'waveeqn' by 'heateqn' in the commands above to train the networks for the heatequation case.
+Again, exchange `waveeqn` by `heateqn` in the commands above to train the networks for the heatequation case.
 
 **The due to the size of the networks and the amount of data, the training will take several days or even weeks to complete (depending on the used hardware).**
 
@@ -73,7 +73,7 @@ This script will run the training for six predefined network architectures:
 - U-Net (without the skip connections) with constant filter dimensions
 - U-Net (without the skip connections) with doubling filter dimensions*
 
-*by default only included in the 'train_waveeqn.sh' skript.
+*by default only included in the `train_waveeqn.sh` skript.
 
 The training process for each architecture is divided in the first 300 epochs with an exponential learningrate decay from 1e-4 to 1e-5 and another 50 epochs with an exponential learningrate decay from 1e-5 to 1e-7. The 
 
@@ -87,7 +87,7 @@ To run a simple prediction run:
     conda activate tf
     python predict_waveeqn.py  
 
-or respectively the '_heateqn' counterpart.
+or respectively the `_heateqn` counterpart.
 
 Customize the prediction settings by using the config dictionaries in predict_waveeqn.py:
 - validation_case = the validation-/test-case to predict. All validation case datasets contain data for 800 timesteps.
@@ -95,7 +95,7 @@ Customize the prediction settings by using the config dictionaries in predict_wa
 - E.g. using config['prediciton']['timestep_start'] = 10 and config['prediciton']['timesteps'] = 5 the prediction will start using timesteps 10,11 and 12 to predict timestep 13 and move on until predicting timestep 17 using the field data at timesteps 14,15,16 as input.
 - If config['prediciton']['iterative_feedback'] is True, the predicted field data is used as field input of the next prediction. Otherwise all predictions are performed using the ground truth as input data.
 
-The predicted fields are saved in the data/prediction_waveequation directory (and respectively the _heatequation counterpart). You can visualize the predicted data using the provided jupyter notebook.
+The predicted fields are saved in the `data/prediction_waveequation` directory (and respectively the `_heatequation` counterpart). You can visualize the predicted data using the provided jupyter notebook.
 
 
 
