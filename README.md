@@ -77,7 +77,7 @@ This script will run the training for six predefined network architectures:
 
 The training process for each architecture is divided in the first 300 epochs with an exponential learningrate decay from 1e-4 to 1e-5 and another 50 epochs with an exponential learningrate decay from 1e-5 to 1e-7. The 
 
-The trained models are saved in the 'data/model_waveequation' subdirectories (and respectively the '_heatequation' counterparts). You can visualize the training (loss) evolutions using the provided jupyter notebook.
+The trained models are saved in the `data/model_waveequation` subdirectories (and respectively the `_heatequation` counterparts). You can visualize the training (loss) evolutions using the provided jupyter notebook.
 
 
 ## Make a prediction using a trained network
