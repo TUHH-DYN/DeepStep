@@ -100,4 +100,54 @@ Customize the prediction settings by using the config dictionaries in predict_wa
 The predicted fields are saved in the `data/prediction_waveequation` directory (and respectively the `_heatequation` counterpart). You can visualize the predicted data using the provided jupyter notebook.
 
 
+## Exemplary videos of model predictions
 
+### Waveequation cases
+
+<table  cellspacing="0" cellpadding="0" style="border: none;">
+<tr>
+      <td>case f | timesteps 150-350</td>
+      <td>case g | timesteps 150-350</td>
+      <td>case h | timesteps 150-350</td>
+      <td>case i | timesteps 150-350</td>
+   </tr> 
+   <tr>
+      <td><a href="https://vimeo.com/681402661"><img src="images/prediction_f_147_200_thumb.jpg" align="left"  alt="1" width="90%"></a></td>
+      <td><a href="https://vimeo.com/681413831"><img src="images/prediction_g_147_200_thumb.jpg" align="left"  alt="1" width="90%"></a></td>
+      <td><a href="https://vimeo.com/681413951"><img src="images/prediction_h_147_200_thumb.jpg" align="left"  alt="1" width="90%"></a></td>
+      <td><a href="https://vimeo.com/681414077"><img src="images/prediction_i_147_200_thumb.jpg" align="left"  alt="1" width="90%"></a></td>
+   </tr>
+</table>
+
+<table  cellspacing="0" cellpadding="0" style="border: none;">
+<tr>
+      <td>case f | timesteps 350-550</td>
+      <td>case g | timesteps 350-550</td>
+      <td>case h | timesteps 350-550</td>
+      <td>case i | timesteps 350-550</td>
+   </tr> 
+   <tr>
+      <td><a href="https://vimeo.com/681413758"><img src="images/prediction_f_347_200_thumb.jpg" align="left"  alt="1" width="90%"></a></td>
+      <td><a href="https://vimeo.com/681413874"><img src="images/prediction_g_347_200_thumb.jpg" align="left"  alt="1" width="90%"></a></td>
+      <td><a href="https://vimeo.com/681414025"><img src="images/prediction_h_347_200_thumb.jpg" align="left"  alt="1" width="90%"></a></td>
+      <td><a href="https://vimeo.com/681414128"><img src="images/prediction_i_347_200_thumb.jpg" align="left"  alt="1" width="90%"></a></td>
+   </tr>
+</table>
+
+
+### Heatequation cases
+
+<table  cellspacing="0" cellpadding="0" style="border: none;">
+<tr>
+      <td>case a/f | timesteps 0-100</td>
+      <td>case b/g | timesteps 0-100</td>
+      <td>case c/h | timesteps 0-100</td>
+      <td>case d/i | timesteps 0-100</td>
+   </tr> 
+   <tr>
+      <td><a href="https://vimeo.com/681417191"><img src="images/prediction_a_0_100_thumb.jpg" align="left"  alt="1" width="90%"></a></td>
+      <td><a href="https://vimeo.com/681417246"><img src="images/prediction_b_0_100_thumb.jpg" align="left"  alt="1" width="90%"></a></td>
+      <td><a href="https://vimeo.com/681417321"><img src="images/prediction_c_0_100_thumb.jpg" align="left"  alt="1" width="90%"></a></td>
+      <td><a href="https://vimeo.com/681417389"><img src="images/prediction_d_0_100_thumb.jpg" align="left"  alt="1" width="90%"></a></td>
+   </tr>
+</table>
