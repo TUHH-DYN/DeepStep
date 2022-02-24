@@ -1,6 +1,6 @@
 # DeepStep: PDE Time Stepping through Deep Learning
 
-Open-source software for training and predicting parameterized spatio-temporal dynamics (2d wave equation, transient heat conduction) using fully convolutional neural networks (Up-Nets, U-Nets, Encoder-Decoder Architectures).
+Open-source software for learning and predicting parameterized spatio-temporal dynamics (2d wave equation, transient heat conduction) using deep fully convolutional neural networks (Up-Nets, U-Nets, Encoder-Decoder Architectures).
 
 ![Comparison of prediction and ground truth after 100 prediction-steps](images/wave_after_100_steps.png)
 
